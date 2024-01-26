@@ -21,3 +21,5 @@ export {default as Footer} from './Footer';
 export {default as TextEditor} from './TextEditor';
 export type { EditorMethods } from './TextEditor';
 export {default as JsonEditor} from './JsonEditor';
+export {default as GroupBox} from './GroupBox';
+export {default as CheckBoxButton} from './CheckBoxButton';
