@@ -1,5 +1,4 @@
-import { IImage } from './ImageSlider';
-export type {IImage};
+export type {IImage} from './ImageSlider';
 export {default as ImageSlider} from './ImageSlider';
 export {default as Input} from './Input';
 export {default as Button} from './Button';
@@ -19,3 +18,6 @@ export {default as Alert} from './Alert';
 export {default as ReactErrorBoundary} from './ReactErrorBoundary';
 export {default as ErrorBoundary} from './ErrorBoundary';
 export {default as Footer} from './Footer';
+export {default as TextEditor} from './TextEditor';
+export type { EditorMethods } from './TextEditor';
+export {default as JsonEditor} from './JsonEditor';
