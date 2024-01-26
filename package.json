@@ -2,7 +2,7 @@
   "name": "typetailui",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
-  "version": "0.7.0",
+  "version": "0.8.0",
   "private": false,
   "dependencies": {
     "@fortawesome/free-brands-svg-icons": "^6.5.1",

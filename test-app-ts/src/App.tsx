@@ -1,6 +1,6 @@
 import './App.css';
 
-import { Container, Text } from "typetailui"
+import { Container, Text, IImage, ImageSlider  } from "typetailui"
 function App() {
   return (
     <Container>
