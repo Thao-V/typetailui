@@ -1,14 +1,17 @@
+import { useState } from 'react';
 import './App.css';
 
 import { Container, Text, 
   IImage, ImageSlider, JsonEditor, TextEditor, EditorMethods ,
-  GroupBox
+  GroupBox,
+  Input
 
 } from "typetailui"
 function App() {
+  const [text, setText] = useState("")
   return (
     <Container>
-      <Text>hello TypeTailUI</Text>
+      <Input type="text" value={text} onChangeText={setText} enableCopy></Input>
     </Container>
   );
 }

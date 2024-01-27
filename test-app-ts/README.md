@@ -1,4 +1,4 @@
-# To run the test
+# To run this app
 1. Create global link for `typetailui`
 - cd ..
 - npm link
@@ -6,3 +6,8 @@
 - npm i
 - npm link typetailui
 - npm start 
+# Run test
+1. Test all cases
+- npm test
+2. Test a single file
+- npm run test Button.test.tsx

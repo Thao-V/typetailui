@@ -8,12 +8,14 @@ interface BackgroundImageProps {
 export default function BackgroundImage({
   source,
   children = null,
-  className = ""
+  className = "",
+  ...rest
 }: BackgroundImageProps): JSX.Element {
   return (
     <div
       style={{backgroundImage: `url(${source})`}}
       className={`BackgroundImage ${className}`}
+      {...rest}
     >
       {children}
     </div>

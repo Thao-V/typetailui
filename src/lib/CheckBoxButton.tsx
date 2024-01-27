@@ -26,13 +26,13 @@ export default function CheckBoxButton({
   const id = `${prefix}-${index}`;
   const name = `${prefix}-${index}`;
   return (
-    <Container className="mb-2 flex items-center">
+    <Container className="mb-2 flex items-center" data-testid="check-box-button">
       <input
         id={id}
         type="checkbox"
         name={name}
         checked={selected}
-        className="RadioButton"
+        className="CheckBox"
         onChange={() => handleSelectionChange(index)}
         disabled={disabled}
       />

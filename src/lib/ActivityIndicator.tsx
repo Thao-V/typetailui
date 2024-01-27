@@ -1,14 +1,9 @@
 import "./templates.css";
 import Container from "./Container";
-interface ActivityIndicatorProps {
-  className?: string;
-}
 
-export default function ActivityIndicator({
-  className = ""
-}: ActivityIndicatorProps): JSX.Element {
+export default function ActivityIndicator({...rest}): JSX.Element {
   return (
-    <Container className="ActivityIndicator">
+    <Container className="ActivityIndicator" data-testid="activity-indicator">
       <Container className="Spin" />
     </Container>
   );

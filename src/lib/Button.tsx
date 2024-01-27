@@ -5,6 +5,6 @@ interface ButtonProps{
   onClick?: () => void
 }
 
-export default function Button({className = "", title, onClick}: ButtonProps): JSX.Element{
-  return <button className={`Button ${className}`} onClick={onClick}>{title}</button>
+export default function Button({className = "", title, onClick, ...rest}: ButtonProps): JSX.Element{
+  return <button className={`Button ${className}`} onClick={onClick} {...rest}>{title}</button>
 } 

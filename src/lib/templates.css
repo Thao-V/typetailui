@@ -62,6 +62,9 @@
   .RadioButton {
     @apply h-5 w-5 text-blue-500 flex-shrink-0;
   }
+  .CheckBox {
+    @apply h-5 w-5 text-blue-500 flex-shrink-0;
+  }
   .ActivityIndicator {
     @apply fixed inset-0 bg-gray-100 bg-opacity-75;
     @apply flex justify-center items-center z-50;

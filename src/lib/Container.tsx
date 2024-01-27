@@ -4,6 +4,6 @@ interface ContainerProps{
   className?: string;
 }
 
-export default function Container({children, className=""}: ContainerProps): JSX.Element{
-  return <div className={`Container ${className}`}>{children}</div>
+export default function Container({children, className="", ...rest}: ContainerProps): JSX.Element{
+  return <div className={`Container ${className}`} {...rest}>{children}</div>
 } 

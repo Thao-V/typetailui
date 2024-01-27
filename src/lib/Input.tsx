@@ -23,7 +23,8 @@ export default function Input({
   enablePaste = true,
   label = "",
   onChangeText = (val: string) => {},
-  handleEnterKey = () => {}
+  handleEnterKey = () => {},
+  ...rest
 }: InputProps): JSX.Element {
   const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     event.preventDefault();
@@ -32,8 +33,14 @@ export default function Input({
   const handlePaste = (event: React.ClipboardEvent<HTMLInputElement>) => {
     event.preventDefault();
     if (enablePaste) {
-      const text = value + event.clipboardData.getData("text/plain");
-      onChangeText(text);
+      const pastedText = event.clipboardData.getData('text/plain');
+      const inputElem = event.target as HTMLInputElement;
+      // Get the current selection range
+      const start = inputElem.selectionStart || 0;
+      const end = inputElem.selectionEnd || 0;
+
+      const updatedValue = value.substring(0, start) + pastedText + value.substring(end);
+      onChangeText(updatedValue);
     }
   };
   const handleCopy = (event: React.ClipboardEvent<HTMLInputElement>) => {
@@ -64,6 +71,7 @@ export default function Input({
         onPaste={handlePaste}
         disabled={disabled}
         onKeyUp={handleKeyUp}
+        {...rest}
       />
     </Container>
   );

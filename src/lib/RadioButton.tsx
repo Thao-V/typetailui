@@ -25,7 +25,7 @@ export default function RadioButton({
   };
   const id = `${name}-${index}`;
   return (
-    <Container className="mb-2 flex items-center">
+    <Container className="mb-2 flex items-center" data-testid="radio-button">
       <input
         id={id}
         type="radio"
