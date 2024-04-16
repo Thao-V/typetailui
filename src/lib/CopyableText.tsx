@@ -18,7 +18,7 @@ export default function CopyableText({ title, code }: CopyableTextProps) {
         <H2 className="text-xl font-bold mb-2">
           {title}
         </H2>
-        <Button title="Copy Code" onClick={copyToClipboard} />
+        <Button title="Copy All" onClick={copyToClipboard} />
       </Container>
 
       <textarea
