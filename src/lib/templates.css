@@ -75,6 +75,6 @@
     @apply h-8 w-8 sm:h-12 sm:w-12 md:h-16 md:w-16;
   }
   .TextArea {
-    @apply border w-full
+    @apply border w-full p-2
   }
 }
