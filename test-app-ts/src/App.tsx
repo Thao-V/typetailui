@@ -5,7 +5,8 @@ import { Container, Text,
   IImage, ImageSlider, JsonEditor, TextEditor, EditorMethods ,
   GroupBox,
   Input,
-  Button
+  Button,
+  TextArea
 } from "typetailui"
 function App() {
   const [text, setText] = useState("");
@@ -21,10 +22,13 @@ function App() {
   }
   return (
     <Container>
-      <TextEditor ref={editorRef} />
+      {/* <TextEditor ref={editorRef} /> */}
+      <Text>test</Text>
+      <TextArea value={""} placeholder='hello' rows={10}/>
       <Button title="Add" onClick={onSubmit} />
     </Container>
   );
 }
+
 
 export default App;
