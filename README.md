@@ -54,5 +54,6 @@ export default MyComponent;
 19. Text
 20. TextEditor
 21. TextArea
+22. YouTubeVideo
 ## License
 TypeTailUI is licensed under the Apache License 2.0. See the LICENSE file for more information.

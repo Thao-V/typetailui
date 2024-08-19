@@ -25,3 +25,4 @@ export {default as GroupBox} from './GroupBox';
 export {default as CheckBoxButton} from './CheckBoxButton';
 export {default as CopyableText} from './CopyableText';
 export {default as TextArea} from './TextArea';
+export {default as YouTubeVideo} from './YouTubeVideo';
