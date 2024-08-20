@@ -55,5 +55,6 @@ export default MyComponent;
 20. TextEditor
 21. TextArea
 22. YouTubeVideo
+23. ProgressTracker
 ## License
 TypeTailUI is licensed under the Apache License 2.0. See the LICENSE file for more information.
