@@ -1,4 +1,5 @@
-import './templates.css'
+import './templates.css';
+import { JSX } from "react";
 interface H2Props{
   children: any;
   className?: string

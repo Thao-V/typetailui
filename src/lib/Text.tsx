@@ -1,4 +1,5 @@
 import "./templates.css";
+import { JSX } from "react";
 interface TextProps {
   className?: string;
   children?: any;

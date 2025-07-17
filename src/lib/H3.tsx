@@ -1,4 +1,5 @@
-import './templates.css'
+import './templates.css';
+import { JSX } from "react";
 interface H3Props{
   children: any;
   className?: string

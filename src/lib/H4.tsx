@@ -1,4 +1,5 @@
 import "./templates.css";
+import { JSX } from "react";
 interface H4Props {
   children: any;
   className?: string;

@@ -1,6 +1,6 @@
 import Input from "./Input";
 import "./templates.css";
-import React, { useState } from "react";
+import { JSX, useState } from "react";
 
 interface NumericInputProps {
   className?: string;

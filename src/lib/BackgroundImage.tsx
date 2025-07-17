@@ -1,4 +1,5 @@
 import "./templates.css";
+import { JSX } from "react";
 interface BackgroundImageProps {
   source: string;
   children?: React.ReactNode;

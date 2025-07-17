@@ -1,4 +1,6 @@
 import "./templates.css";
+import { JSX } from "react";
+
 interface TextAreaProps {
   value: string;
   rows: number;
@@ -6,6 +8,7 @@ interface TextAreaProps {
   className?: string;
   placeholder?: string;
 }
+
 export default function TextArea({
   className = "",
   value = "",

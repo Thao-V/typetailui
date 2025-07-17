@@ -1,4 +1,5 @@
-import './templates.css'
+import './templates.css';
+import { JSX } from "react";
 interface ImageProps{
   source: string;
   alt?: string;

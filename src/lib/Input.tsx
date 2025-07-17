@@ -1,6 +1,8 @@
+import "./templates.css";
+import { JSX } from "react";
 import Container from "./Container";
 import Text from "./Text";
-import "./templates.css";
+
 interface InputProps {
   type: string;
   value: string;
