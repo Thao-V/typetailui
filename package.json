@@ -8,6 +8,7 @@
   "version": "0.22.0",
   "private": false,
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^6.7.2",
     "@fortawesome/free-brands-svg-icons": "^6.6.0",
     "@fortawesome/react-fontawesome": "^0.2.2",
     "draft-js": "^0.11.7",
@@ -24,8 +25,8 @@
     "mobile ui"
   ],
   "peerDependencies": {
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react": "^18.3.0",
+    "react-dom": "^18.3.0"
   },
   "scripts": {
     "build:lib": "tsc && cp src/lib/templates.css dist/"
